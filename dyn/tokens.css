@@ -1,0 +1,67 @@
+/* Dynamics-instructies — tokens, afgeleid van tokens.json van het design system */
+:root{
+  --d365-header: #021838;
+  --d365-header-ink: #ffffff;
+  --d365-search: #c7ccd3;
+  --d365-search-ink: #424242;
+  --d365-area-tile: #2975b2;
+  --canvas: #fafafa;
+  --surface: #ffffff;
+  --surface-hover: #f5f5f5;
+  --surface-pressed: #e0e0e0;
+  --nav-bg: #f0f0f0;
+  --nav-selected: #ffffff;
+  --ink: #242424;
+  --ink-2: #424242;
+  --ink-3: #616161;
+  --ink-disabled: #bdbdbd;
+  --stroke-1: #d1d1d1;
+  --stroke-2: #e0e0e0;
+  --stroke-3: #f0f0f0;
+  --stroke-input: #616161;
+  --brand: #0f6cbd;
+  --brand-hover: #115ea3;
+  --brand-pressed: #0c3b5e;
+  --brand-tint: #ebf3fc;
+  --on-brand: #ffffff;
+  --link: #115ea3;
+  --cmd-new: #5bbe7e;
+  --cmd-powerbi: #c57e0e;
+  --avatar-1: #0b6a0b;
+  --avatar-2: #5c2e91;
+  --avatar-3: #8e562e;
+  --avatar-4: #005b70;
+  --success: #107c10;
+  --success-tint: #f1faf1;
+  --danger: #c50f1f;
+  --danger-tint: #fdf3f4;
+  --medal-gold: #866209;
+  --medal-silver: #616161;
+  --medal-bronze: #8e562e;
+  --medal-tint: #fef7e8;
+  --shadow-4: 0 0 2px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.14);
+  --shadow-16: 0 0 2px rgba(0,0,0,0.12), 0 8px 16px rgba(0,0,0,0.14);
+  --shadow-28: 0 0 8px rgba(0,0,0,0.12), 0 14px 28px rgba(0,0,0,0.14);
+  --focus-ring: 0 0 0 2px #ffffff, 0 0 0 4px #0f6cbd;
+  --space-xxs: 2px;
+  --space-xs: 4px;
+  --space-s: 8px;
+  --space-m: 12px;
+  --space-l: 16px;
+  --space-xl: 20px;
+  --space-xxl: 24px;
+  --space-xxxl: 32px;
+  --radius-s: 2px;
+  --radius-m: 4px;
+  --radius-l: 8px;
+  --radius-circle: 9999px;
+  --header-height: 48px;
+  --nav-width: 200px;
+  --cmdbar-height: 44px;
+  --row-height: 42px;
+  --coach-width: 320px;
+  --font-sans: "Segoe UI", Selawik, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+@font-face{font-family:'Selawik';src:url('fonts/Selawik-Light.woff2') format('woff2');font-weight:300;font-style:normal;font-display:swap;}
+@font-face{font-family:'Selawik';src:url('fonts/Selawik-Regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap;}
+@font-face{font-family:'Selawik';src:url('fonts/Selawik-Bold.woff2') format('woff2');font-weight:600 700;font-style:normal;font-display:swap;}

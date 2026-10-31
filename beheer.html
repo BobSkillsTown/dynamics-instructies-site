@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Beheer scoreboard</title>
+<link rel="stylesheet" href="dyn/tokens.css">
+<link rel="stylesheet" href="dyn/bundle.css">
+<link rel="stylesheet" href="app.css">
+<style>
+  body { margin: 0; }
+  .bh { max-width: 860px; margin: 0 auto; padding: 24px 16px 48px; display: flex; flex-direction: column; gap: 16px; }
+  .bh h1 { margin: 0; font-size: 28px; line-height: 36px; font-weight: 600; }
+  .bh textarea { width: 100%; min-height: 120px; box-sizing: border-box; padding: 10px; border: 1px solid var(--stroke-1); border-radius: var(--radius-m); font: 14px/20px ui-monospace, Consolas, monospace; background: var(--surface); color: var(--ink); }
+  .bh ol { margin: 0; padding-left: 20px; color: var(--ink-2); display: grid; gap: 4px; }
+  .bh__row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  .bh__dirty { color: var(--ink); font-weight: 600; }
+  .bh button:disabled { opacity: .5; cursor: default; }
+</style>
+</head>
+<body>
+<main class="bh">
+  <h1>Beheer scoreboard</h1>
+  <section class="hub__box">
+    <h2>Huidige scores <span class="hub__count" id="count"></span></h2>
+    <p>Bijgewerkt op: <span id="updated">laden…</span></p>
+    <div class="hub__manual" id="players"></div>
+  </section>
+  <section class="hub__box">
+    <h2>Resultaatcodes toevoegen</h2>
+    <p>Plak een of meer codes, één per regel. Een nieuwere code met dezelfde voornaam vervangt de oude.</p>
+    <textarea id="codes" placeholder="DI-…" aria-label="Resultaatcodes"></textarea>
+    <div class="bh__row"><button type="button" class="dy-btn" id="process">Verwerken</button></div>
+    <div id="results"></div>
+  </section>
+  <section class="hub__box">
+    <h2>Publiceren</h2>
+    <p class="bh__dirty" id="dirty" hidden>Er zijn wijzigingen die nog niet online staan.</p>
+    <div class="bh__row"><button type="button" class="dy-btn dy-btn--primary" id="download" disabled>Download scores.json</button></div>
+    <ol>
+      <li>Open de repository van de website op GitHub.</li>
+      <li>Klik op <b>Add file</b> → <b>Upload files</b> en sleep het gedownloade <b>scores.json</b> erin.</li>
+      <li>Klik op <b>Commit changes</b>. Na ongeveer een minuut staat het nieuwe scoreboard online.</li>
+    </ol>
+  </section>
+</main>
+<script src="codes.js"></script>
+<script src="beheer.js"></script>
+</body>
+</html>
